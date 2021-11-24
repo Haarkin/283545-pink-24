@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Александр Кузьменко](https://up.htmlacademy.ru/adaptive/24/user/283545).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
