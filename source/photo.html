@@ -23,12 +23,12 @@
           </span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a>
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="photo.html">
               Фотографии
             </a>
@@ -47,14 +47,14 @@
       </nav>
     </div>
   </header>
-  <main class="page-photo">
-    <h1 class="page-photo__title">Фотографии пользователей</h1>
+  <main class="page-main">
+    <h1 class="page-main__title">Фотографии пользователей</h1>
     <section class="photo-gallery">
       <h2 class="visually-hidden">Галерея</h2>
       <p>Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
       <ul class="photo-gallery__list">
-        <li class="photo-gallery__photo">
+        <li class="photo-gallery__photo photo">
           <img class="photo__img photo__img--top" src="#" alt="Панорама гор">
           <figure class="photo__item">
             <figcaption class="photo__author-name">Анна</figcaption>
@@ -135,48 +135,44 @@
           <span class="photo__like-counter">Нравится: 2560</span>
         </li>
       </ul>
-      <p>Затмите их всех!
-        Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="editor">
       <h2 class="visually-hidden">Редактор</h2>
-      <img class="editor__image" src="#" alt="Редактируемое фото">
-      <ul class="editor__tools">
-        <li class="editor__item">
-          <span class="visually-hidden">Обрезание</span>
-          <div class="editor__range">
-            <div class="range__bar">
+      <p>Затмите их всех!
+        Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="editor__form" action="https://echo.htmlacademy.ru/" method="post">
+        <img class="editor__image" src="#" alt="Редактируемое фото">
+        <div class="editor__tools">
+          <div class="editor__item">
+            <span class="visually-hidden">Кадрирование</span>
+            <div class="range">
               <button class="range__toggle" type="button">
                 <span class="visually-hidden">Изменить</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="editor__item">
-          <span class="visually-hidden">Заливка</span>
-          <div class="editor__range">
-            <div class="range__bar">
+          <div class="editor__item">
+            <span class="visually-hidden">Заливка</span>
+            <div class="range">
               <button class="range__toggle" type="button">
                 <span class="visually-hidden">Изменить</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="editor__item">
-          <span class="visually-hidden">Контраст</span>
-          <div class="editor__range">
-            <div class="range__bar">
+          <div class="editor__item">
+            <span class="visually-hidden">Контраст</span>
+            <div class="range">
               <button class="range__toggle" type="button">
                 <span class="visually-hidden">Изменить</span>
               </button>
             </div>
           </div>
-        </li>
-      </ul>
-      <div class="editor__buttons">
-        <button class="button editor__submit-button" type="submit">Запостить</button>
-        <button class="button editor__cancel-button"></button>
-      </div>
+        </div>
+        <div class="editor__buttons">
+          <button class="button editor__submit-button" type="submit">Запостить</button>
+          <button class="button editor__cancel-button" type="reset">Отмена</button>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">

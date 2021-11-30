@@ -23,7 +23,7 @@
           </span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a>
               Главная
             </a>
@@ -33,7 +33,7 @@
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="form.html">
               Конкурс
             </a>
@@ -47,108 +47,111 @@
       </nav>
     </div>
   </header>
-  <main class="page-form">
+  <main class="page-main">
     <h1 class="visually-hidden">Форма регистрации</h1>
-    <span class="page-form__announce">Конкурс на самое
+    <p class="page-form__announce">Конкурс на самое
       безбашенное
-      путешествие с Пинк</span>
-    <form class="page-form__registration-form">
+      путешествие с Пинк</p>
+    <form class="page-main__registration" action="https://echo.htmlacademy.ru/" method="post">
       <p>Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!</p>
-      <div class="registration-form__name-container">
-        <label for="surname-field" class="registration-form__label">
-          ФАМИЛИЯ:
-        </label>
-        <input class="field" placeholder="Укажите фамилию *" type="text" id="surname-field" name="surname-field"
-          required>
-        <label for="name-field" class="registration-form__label">
-          ИМЯ:
-        </label>
-        <input class="field" placeholder="Введите ваше имя *" type="text" id="name-field" name="name-field" required>
-        <label for="second-name-field" class="registration-form__label">
-          ОТЧЕСТВО:
-        </label>
-        <input class="field" placeholder="Ну и отчество тоже" type="text" id="second-name-field"
-          name="second-name-field">
+      <div class="registration__name-form">
+        <div class="field">
+          <label for="surname" class="registration__label">
+            Фамилия:
+          </label>
+          <input class="field__input" placeholder="Укажите фамилию *" type="text" id="surname" name="surname" required>
+        </div>
+        <div class="field">
+          <label for="name" class="registration__label">
+            Имя:
+          </label>
+          <input class="field__input" placeholder="Введите ваше имя *" type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="second-name" class="registration__label">
+            Отчество:
+          </label>
+          <input class="field__input" placeholder="Ну и отчество тоже" type="text" id="second-name" name="second-name">
+        </div>
       </div>
-      <fieldset class="registration-form__achievement-fieldset">
-        <legend class="achievement-fieldset__title">Ваши безбашенные
+      <fieldset class="registration__achievement-form">
+        <legend class="achievement-form__title">Ваши безбашенные
           достижения в путешествии</legend>
-        <ul class="achievement-fieldset__list">
-          <li class="achievement-fieldset__item">
-            <label class="control">
+        <ul class="achievement-form__list">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="selfie" checked>
-              <span class="control-label">Сделал селфи с акулой</span>
+              <span class="label__description">Сделал селфи с акулой</span>
             </label>
           </li>
-          <li class="achievement-fieldset__item">
-            <label class="control">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="beach" checked>
-              <span class="control-label">Обгорел на пляже</span>
+              <span class="label__description">Обгорел на пляже</span>
             </label>
           </li>
-          <li class="achievement-fieldset__item">
-            <label class="control">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="chuck-norris">
-              <span class="control-label">Видел Чака Норриса</span>
+              <span class="label__description">Видел Чака Норриса</span>
             </label>
           </li>
-          <li class="achievement-fieldset__item">
-            <label class="control">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="souvenir">
-              <span class="control-label">Накупил сувениров</span>
+              <span class="label__description">Накупил сувениров</span>
             </label>
           </li>
-          <li class="achievement-fieldset__item">
-            <label class="control">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="tower" checked>
-              <span class="control-label">Удержал башню</span>
+              <span class="label__description">Удержал башню</span>
             </label>
           </li>
-          <li class="achievement-fieldset__item">
-            <label class="control">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label">
               <input class="visually-hidden control-input" type="checkbox" name="destruction">
-              <span class="control-label">Разгромил отель</span>
+              <span class="label__description">Разгромил отель</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="registration-form__contact-fieldset">
-        <legend class="contact-fieldset__title">Контактная информация</legend>
-        <ul class="contact-fieldset__list">
-          <li class="contact-fieldset__item">
-            <label for="phone-field" class="registration-form__label">
-              НОМЕР ТЕЛЕФОНА
+      <fieldset class="registration__contact-form">
+        <legend class="contact-form__title">Контактная информация</legend>
+        <div class="contact-form__list">
+          <div class="contact-form__item">
+            <label for="phone" class="registration__label">
+              Номер телефона
             </label>
-            <input class="field" placeholder="Номер, пожалуйста" type="number" id="phone-field" name="phone-field">
-          </li>
-          <li class="contact-fieldset__item">
-            <label for="email-field" class="registration-form__label">
-              АДРЕС ПОЧТЫ
+            <input class="item__input" placeholder="Номер, пожалуйста" type="number" id="phone" name="phone">
+          </div>
+          <div class="contact-form__item">
+            <label for="email" class="registration__label">
+              Адрес почты
             </label>
-            <input class="field" placeholder="Введите почту *" type="email" id="email-field" name="email-field"
-              required>
-          </li>
-        </ul>
+            <input class="item__input" placeholder="Введите почту *" type="email" id="email" name="email" required>
+          </div>
+        </div>
       </fieldset>
-      <fieldset class="registration-form__program-fieldset">
-        <legend class="program-fieldset__title">С каким приложением
+      <fieldset class="registration__program-form">
+        <legend class="program-form__title">С каким приложением
           путешествовали?</legend>
-        <ul class="program-fieldset__list">
-          <li class="program-fieldset__item">
+        <ul class="program-form__list">
+          <li class="program-form__item">
             <label class="control">
               <input class="visually-hidden control-input" type="radio" name="program-group" value="iOS" checked>
               <span class="control-label">Pink для iOS</span>
             </label>
           </li>
-          <li class="program-fieldset__item">
+          <li class="program-form__item">
             <label class="control">
               <input class="visually-hidden control-input" type="radio" name="program-group" value="Android">
               <span class="control-label">Pink на Android</span>
             </label>
           </li>
-          <li class="program-fieldset__item">
+          <li class="program-form__item">
             <label class="control">
               <input class="visually-hidden control-input" type="radio" name="program-group" value="Windows Phone">
               <span class="control-label">Windows Phone</span>
@@ -156,12 +159,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="registration-form__program-fieldset">
-        <legend class="program-fieldset__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+      <fieldset class="registration__program-fieldset">
+        <legend class="program-fieldset__title">Опишите свои эмоции</legend>
         <input class="field" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text"
           name="feeling-commentary">
       </fieldset>
-      <button class="button registration-form__submit-button" type="submit">Отправить форму</button>
+      <button class="button registration__submit-button" type="submit">Отправить форму</button>
       <span>* — обязательные поля</span>
     </form>
   </main>
@@ -212,17 +215,17 @@
       </li>
     </ul>
 
-    <p class="about-text">
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        Разработано
-        <span class="visually-hidden">в HTML Academy</span>
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-            fill="#D22856" />
-        </svg>
-      </a>
-    </p>
+
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      Разработано
+      <span class="visually-hidden">в HTML Academy</span>
+      <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+          fill="#D22856" />
+      </svg>
+    </a>
+
   </footer>
 
 </body>
