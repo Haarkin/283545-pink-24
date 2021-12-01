@@ -24,7 +24,7 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -49,85 +49,85 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Форма регистрации</h1>
-    <p class="page-form__announce">Конкурс на самое
+    <p class="page-main__announce">Конкурс на самое
       безбашенное
       путешествие с Пинк</p>
-    <form class="page-main__registration" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="page-main__registration registration" action="https://echo.htmlacademy.ru/" method="post">
       <p>Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!</p>
       <div class="registration__name-form">
         <div class="field">
-          <label for="surname" class="registration__label">
+          <label for="surname" class="field__label">
             Фамилия:
           </label>
           <input class="field__input" placeholder="Укажите фамилию *" type="text" id="surname" name="surname" required>
         </div>
         <div class="field">
-          <label for="name" class="registration__label">
+          <label for="name" class="field__label">
             Имя:
           </label>
           <input class="field__input" placeholder="Введите ваше имя *" type="text" id="name" name="name" required>
         </div>
         <div class="field">
-          <label for="second-name" class="registration__label">
+          <label for="second-name" class="field__label">
             Отчество:
           </label>
           <input class="field__input" placeholder="Ну и отчество тоже" type="text" id="second-name" name="second-name">
         </div>
       </div>
-      <fieldset class="registration__achievement-form">
+      <fieldset class="registration__achievement-form achievement-form">
         <legend class="achievement-form__title">Ваши безбашенные
           достижения в путешествии</legend>
         <ul class="achievement-form__list">
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="selfie" checked>
-              <span class="label__description">Сделал селфи с акулой</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" checked>
+              <span class="checkbox__description">Сделал селфи с акулой</span>
             </label>
           </li>
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="beach" checked>
-              <span class="label__description">Обгорел на пляже</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="beach" checked>
+              <span class="checkbox__description">Обгорел на пляже</span>
             </label>
           </li>
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="chuck-norris">
-              <span class="label__description">Видел Чака Норриса</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="chuck-norris">
+              <span class="checkbox__description">Видел Чака Норриса</span>
             </label>
           </li>
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="souvenir">
-              <span class="label__description">Накупил сувениров</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="souvenir">
+              <span class="checkbox__description">Накупил сувениров</span>
             </label>
           </li>
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="tower" checked>
-              <span class="label__description">Удержал башню</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="tower" checked>
+              <span class="checkbox__description">Удержал башню</span>
             </label>
           </li>
           <li class="achievement-form__item">
-            <label class="achievement-form__label">
-              <input class="visually-hidden control-input" type="checkbox" name="destruction">
-              <span class="label__description">Разгромил отель</span>
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="destruction">
+              <span class="checkbox__description">Разгромил отель</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="registration__contact-form">
+      <fieldset class="registration__contact-form contact-form">
         <legend class="contact-form__title">Контактная информация</legend>
         <div class="contact-form__list">
-          <div class="contact-form__item">
+          <div class="contact-form__item item">
             <label for="phone" class="registration__label">
               Номер телефона
             </label>
             <input class="item__input" placeholder="Номер, пожалуйста" type="number" id="phone" name="phone">
           </div>
-          <div class="contact-form__item">
+          <div class="contact-form__item item">
             <label for="email" class="registration__label">
               Адрес почты
             </label>
@@ -135,7 +135,7 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="registration__program-form">
+      <fieldset class="registration__program-form program-form">
         <legend class="program-form__title">С каким приложением
           путешествовали?</legend>
         <ul class="program-form__list">
@@ -159,7 +159,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="registration__program-fieldset">
+      <fieldset class="registration__program-fieldset program-fieldset">
         <legend class="program-fieldset__title">Опишите свои эмоции</legend>
         <input class="field" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text"
           name="feeling-commentary">

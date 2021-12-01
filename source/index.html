@@ -22,28 +22,28 @@
             Открыть меню
           </span>
         </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="foto.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="foto.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -78,8 +78,8 @@
 
     <section class="advantages-section">
       <div class="advantages-section__wrapper">
-        <h2 class="advantages-section__title">Преимущества</h2>
-        <p>Устали от серости мегаполиса?
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages-section__title">Устали от серости мегаполиса?
 
           Нам есть, что вам
           предложить!</p>
@@ -108,24 +108,25 @@
         <h2 class="reviews__title">Отзывы о нас</h2>
         <div class="reviews__list">
           <figure class="reviews__item">
-              <figcaption class="reviews__author-name">Николай Петров</figcaption>
-                <blockquote class="reviews__author-info">
+            <figcaption class="reviews__author-name">Николай Петров</figcaption>
+            <blockquote class="reviews__author-info">
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </figure>
-        <p class="reviews__toggles slider">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+            </blockquote>
+          </figure>
+          <p class="reviews__toggles slider">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </div>
     </section>
 
-        <section class="proposal">
-          <h2 class="visually-hidden">Предложения</h2>
-        <table class="proposal__tarifs-table">
+    <section class="proposal">
+      <h2 class="visually-hidden">Предложения</h2>
+      <table class="proposal__table">
+        <thead class="proposal__tarifs-table">
           <tr class="tarifs-table__head">
             <th class="head">
               <p class="head__title">База</p>
@@ -140,8 +141,8 @@
               <span class="head__price">9,99 USD</span>
             </th>
           </tr>
-        </table>
-        <table class="proposal__advantage-table">
+        </thead>
+        <tbody class="proposal__advantage-table">
           <tr class="advantage-table__advantage">
             <td class="advantage">
               <p class="advantage__description">Розовый фильтр</p>
@@ -184,13 +185,14 @@
               <span class="visually-hidden">Присутствует</span>
             </td>
           </tr>
-        </table>
-        <p class="reviews__toggles slider">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </section>
+        </tbody>
+      </table>
+      <p class="reviews__toggles slider">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle slider__toggle--current" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </section>
 
   </main>
   <footer class="page-footer">
@@ -199,15 +201,15 @@
     <ul class="footer-contacts">
       <li class="footer-contacts__item">
         <h3 class="footer-contacts__title">Звоните:</h3>
-        <a class="footer-contacts__address-phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <a class="footer-contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </li>
       <li class="footer-contacts__item">
         <h3 class="footer-contacts__title">Пишите:</h3>
-        <a class="footer-contacts__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <a class="footer-contacts__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </li>
       <li class="footer-contacts__item">
         <h3 class="footer-contacts__title">Приезжайте в гости:</h3>
-        <a class="footer-contacts__address-hq" href="#">ул. Большая
+        <a class="footer-contacts__link" href="#">ул. Большая
           Конюшенная, 19/8</a>
       </li>
     </ul>
@@ -237,24 +239,24 @@
     <ul class="site-contacts">
       <li class="site-contacts__contact">
         <a class="site-contacts__link" href="#">
-        <span class="visually-hidden">
-          Twitter
-        </span>
-      </a>
+          <span class="visually-hidden">
+            Twitter
+          </span>
+        </a>
       </li>
       <li class="site-contacts__contact">
         <a class="site-contacts__link" href="#">
-        <span class="visually-hidden">
-          Facebook
-        </span>
-      </a>
+          <span class="visually-hidden">
+            Facebook
+          </span>
+        </a>
       </li>
       <li class="site-contacts__contact">
         <a class="site-contacts__link" href="#">
-        <span class="visually-hidden">
-          YouTube
-        </span>
-      </a>
+          <span class="visually-hidden">
+            YouTube
+          </span>
+        </a>
       </li>
     </ul>
 
