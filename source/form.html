@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -23,17 +23,17 @@
           </span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
+          <li class="site-list__item">
+            <a href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="foto.html">
+            <a href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="form.html">
               Конкурс
             </a>
@@ -48,172 +48,127 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Взгляните на жизнь
-      иначе!</h1>
-
-    <section class="link-section">
-      <div class="link-section__wrapper">
-        <h2 class="visually-hidden">Ссылки на скачивание</h2>
-        <a class="link-section__button button" href="#">Скачать приложение</a>
-        <ul class="link-section__list">
-          <li class="link-section__item">
-            <a href="#">
-              <span class="visually-hidden">Apple</span>
-            </a>
-          </li>
-          <li class="link-section__item">
-            <a href="#">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="link-section__item">
-            <a href="#">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
-
-    <section class="advantages-section">
-      <div class="advantages-section__wrapper">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages-section__title">Устали от серости мегаполиса?
-
-          Нам есть, что вам
-          предложить!</p>
-        <ul class="advantages-section__list">
-          <li class="advantages-section__item advantages-section__item--happiness">
-            <h3 class="advantage__title">Поднимает настроение</h3>
-            <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
-          </li>
-          <li class="advantages-section__item advantages-section__item--change">
-            <h3 class="advantage__title">Меняет мир вокруг</h3>
-            <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </li>
-          <li class="advantages-section__item advantages-section__item--friends">
-            <h3 class="advantage__title">Заводит новых друзей</h3>
-            <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__title">Отзывы о нас</h2>
-        <div class="reviews__list">
-          <figure class="reviews__item">
-            <figcaption class="reviews__author-name">Николай Петров</figcaption>
-            <blockquote class="reviews__author-info">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-                серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </figure>
-          <p class="reviews__toggles slider">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+    <h1 class="visually-hidden">Форма регистрации</h1>
+    <p class="page-main__announce">Конкурс на самое
+      безбашенное
+      путешествие с Пинк</p>
+    <form class="page-main__registration registration" action="https://echo.htmlacademy.ru/" method="post">
+      <p>Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!</p>
+      <div class="registration__name-form">
+        <div class="field">
+          <label for="surname" class="field__label">
+            Фамилия:
+          </label>
+          <input class="field__input" placeholder="Укажите фамилию *" type="text" id="surname" name="surname" required>
+        </div>
+        <div class="field">
+          <label for="name" class="field__label">
+            Имя:
+          </label>
+          <input class="field__input" placeholder="Введите ваше имя *" type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="second-name" class="field__label">
+            Отчество:
+          </label>
+          <input class="field__input" placeholder="Ну и отчество тоже" type="text" id="second-name" name="second-name">
         </div>
       </div>
-    </section>
-
-    <section class="proposal">
-      <h2 class="visually-hidden">Предложения</h2>
-      <table class="proposal__table">
-        <thead class="proposal__tarifs-table">
-          <tr class="tarifs-table__head">
-            <th class="head">
-              <p class="head__title">База</p>
-              <span class="head__price">1,99 USD</span>
-            </th>
-            <th class="head">
-              <p class="head__title">Стандарт</p>
-              <span class="head__price">3,99 USD</span>
-            </th>
-            <th class="head">
-              <p class="head__title">Анлим</p>
-              <span class="head__price">9,99 USD</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="proposal__advantage-table">
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Розовый фильтр</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Смайлики</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Комментарии</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="reviews__toggles slider">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--current" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </section>
-
+      <fieldset class="registration__achievement-form achievement-form">
+        <legend class="achievement-form__title">Ваши безбашенные
+          достижения в путешествии</legend>
+        <ul class="achievement-form__list">
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox__input" type="checkbox" name="selfie" checked>
+              <span class="checkbox__description">Сделал селфи с акулой</span>
+            </label>
+          </li>
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="beach" checked>
+              <span class="checkbox__description">Обгорел на пляже</span>
+            </label>
+          </li>
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="chuck-norris">
+              <span class="checkbox__description">Видел Чака Норриса</span>
+            </label>
+          </li>
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="souvenir">
+              <span class="checkbox__description">Накупил сувениров</span>
+            </label>
+          </li>
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="tower" checked>
+              <span class="checkbox__description">Удержал башню</span>
+            </label>
+          </li>
+          <li class="achievement-form__item">
+            <label class="achievement-form__label checkbox">
+              <input class="visually-hidden checkbox-input" type="checkbox" name="destruction">
+              <span class="checkbox__description">Разгромил отель</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="registration__contact-form contact-form">
+        <legend class="contact-form__title">Контактная информация</legend>
+        <div class="contact-form__list">
+          <div class="contact-form__item item">
+            <label for="phone" class="registration__label">
+              Номер телефона
+            </label>
+            <input class="item__input" placeholder="Номер, пожалуйста" type="number" id="phone" name="phone">
+          </div>
+          <div class="contact-form__item item">
+            <label for="email" class="registration__label">
+              Адрес почты
+            </label>
+            <input class="item__input" placeholder="Введите почту *" type="email" id="email" name="email" required>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="registration__program-form program-form">
+        <legend class="program-form__title">С каким приложением
+          путешествовали?</legend>
+        <ul class="program-form__list">
+          <li class="program-form__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="program-group" value="iOS" checked>
+              <span class="control-label">Pink для iOS</span>
+            </label>
+          </li>
+          <li class="program-form__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="program-group" value="Android">
+              <span class="control-label">Pink на Android</span>
+            </label>
+          </li>
+          <li class="program-form__item">
+            <label class="control">
+              <input class="visually-hidden control-input" type="radio" name="program-group" value="Windows Phone">
+              <span class="control-label">Windows Phone</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="registration__program-fieldset program-fieldset">
+        <legend class="program-fieldset__title">Опишите свои эмоции</legend>
+        <input class="field" placeholder="Можно прям в красках, не стесняясь в выражениях" type="text"
+          name="feeling-commentary">
+      </fieldset>
+      <button class="button registration__submit-button" type="submit">Отправить форму</button>
+      <span>* — обязательные поля</span>
+    </form>
   </main>
   <footer class="page-footer">
-    <h2>Остались вопросы?
-      Свяжитесь с нами!</h2>
-    <ul class="footer-contacts">
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Звоните:</h3>
-        <a class="footer-contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-      </li>
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Пишите:</h3>
-        <a class="footer-contacts__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </li>
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Приезжайте в гости:</h3>
-        <a class="footer-contacts__link" href="#">ул. Большая
-          Конюшенная, 19/8</a>
-      </li>
-    </ul>
-    <img src="img/map.png" alt="ул. Большая Конюшенная, 19/8">
 
     <a class="page-footer__logo" href="index.html">
       <span class="visually-hidden">Ссылка на главную</span>
@@ -237,21 +192,21 @@
     </a>
 
     <ul class="site-contacts">
-      <li class="site-contacts__contact">
+      <li class="site-contacts__item">
         <a class="site-contacts__link" href="#">
           <span class="visually-hidden">
             Twitter
           </span>
         </a>
       </li>
-      <li class="site-contacts__contact">
+      <li class="site-contacts__item">
         <a class="site-contacts__link" href="#">
           <span class="visually-hidden">
             Facebook
           </span>
         </a>
       </li>
-      <li class="site-contacts__contact">
+      <li class="site-contacts__item">
         <a class="site-contacts__link" href="#">
           <span class="visually-hidden">
             YouTube
@@ -260,18 +215,19 @@
       </li>
     </ul>
 
-    <p class="about-text">
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        Разработано
-        <span class="visually-hidden">в HTML Academy</span>
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-            fill="#D22856" />
-        </svg>
-      </a>
-    </p>
+
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      Разработано
+      <span class="visually-hidden">в HTML Academy</span>
+      <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+          fill="#D22856" />
+      </svg>
+    </a>
+
   </footer>
+
 </body>
 
 </html>
