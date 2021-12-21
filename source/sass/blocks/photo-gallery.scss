@@ -1,0 +1,16 @@
+.photo-gallery {
+  padding: 100px 130px 130px 130px;
+}
+
+.photo-gallery__list {
+  padding: 0;
+}
+
+.photo-gallery__photo {
+  background-color: $grey;
+  list-style-type: none;
+}
+
+.photo__like-counter {
+  color: $red;
+}
