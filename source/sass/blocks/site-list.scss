@@ -1,4 +1,19 @@
+.site-list {
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
+}
+
 .site-list__link {
   color: $white;
   text-decoration: none;
+  text-align: center;
 }

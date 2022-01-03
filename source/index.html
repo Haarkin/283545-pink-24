@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -50,8 +51,8 @@
   </header>
   <main class="page-main">
     <div class="title-wrapper">
-    <h1 class="page-main__title">Взгляните на жизнь
-      иначе!</h1>
+      <h1 class="page-main__title">Взгляните на жизнь
+        иначе!</h1>
     </div>
 
     <section class="link-section">
@@ -82,7 +83,7 @@
     <section class="advantages-section">
       <div class="advantages-section__wrapper">
         <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advantages-section__title">Устали от серости мегаполиса?
+        <p class="advantages-section__title">Устали от серости мегаполиса?<br>
 
           Нам есть, что вам
           предложить!</p>
@@ -106,9 +107,21 @@
       </div>
     </section>
 
+    <section class="study">
+      <section class="study__wrapper">
+        <h2 class="visually-hidden">Исследование</h2>
+        <p class="study__title">Эффект
+          на 24 часа!</p>
+        <p class="study__text">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a class="study__link" href="#">Узнать больше об исследовании</a>
+      </section>
+    </section>
+
     <section class="reviews">
       <div class="reviews__wrapper">
-        <h2 class="reviews__title">Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list">
           <figure class="reviews__item">
             <figcaption class="reviews__author-name">Николай Петров</figcaption>
@@ -127,97 +140,112 @@
     </section>
 
     <section class="proposal">
-      <h2 class="visually-hidden">Предложения</h2>
-      <table class="proposal__table">
-        <thead class="proposal__tarifs-table">
-          <tr class="tarifs-table__head">
-            <th class="head">
-              <p class="head__title">База</p>
-              <span class="head__price">1,99 USD</span>
-            </th>
-            <th class="head">
-              <p class="head__title">Стандарт</p>
-              <span class="head__price">3,99 USD</span>
-            </th>
-            <th class="head">
-              <p class="head__title">Анлим</p>
-              <span class="head__price">9,99 USD</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="proposal__advantage-table">
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Розовый фильтр</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Смайлики</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-          <tr class="advantage-table__advantage">
-            <td class="advantage">
-              <p class="advantage__description">Комментарии</p>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="advantage">
-              <span class="visually-hidden">Присутствует</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="reviews__toggles slider">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--current" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+      <div class="proposal__wrapper">
+        <h2 class="visually-hidden">Предложения</h2>
+        <table class="proposal__table">
+          <thead class="proposal__tarifs-table">
+            <tr class="tarifs-table__head">
+              <th class="head">
+              </th>
+              <th class="head">
+                <p class="head__title">База</p>
+                <span class="head__price">1,99 USD</span>
+              </th>
+              <th class="head">
+                <p class="head__title">Стандарт</p>
+                <span class="head__price">3,99 USD</span>
+              </th>
+              <th class="head">
+                <p class="head__title">Анлим</p>
+                <span class="head__price">9,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="proposal__advantage-table">
+            <tr class="advantage-table__advantage">
+              <td class="advantage">
+                <p class="advantage__description">Розовый фильтр</p>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Розовый фильтр</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Смайлики</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Комментарии</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+            </tr>
+            <tr class="advantage-table__advantage">
+              <td class="advantage">
+                <p class="advantage__description">Смайлики</p>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Розовый фильтр</span>
+                <span class="visually-hidden">Отсутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Смайлики</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Комментарии</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+            </tr>
+            <tr class="advantage-table__advantage">
+              <td class="advantage">
+                <p class="advantage__description">Комментарии</p>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Розовый фильтр</span>
+                <span class="visually-hidden">Отсутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Смайлики</span>
+                <span class="visually-hidden">Отсутствует</span>
+              </td>
+              <td class="advantage">
+                <span class="advantage__name">Комментарии</span>
+                <span class="visually-hidden">Присутствует</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="reviews__toggles slider">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
     </section>
 
   </main>
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
     <h2>Остались вопросы?
       Свяжитесь с нами!</h2>
-    <ul class="footer-contacts">
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Звоните:</h3>
-        <a class="footer-contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+    <ul class="page-footer-contacts">
+      <li class="page-footer-contacts__item">
+        <h3 class="page-footer-contacts__title">Звоните:</h3>
+        <a class="page-footer-contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </li>
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Пишите:</h3>
-        <a class="footer-contacts__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <li class="page-footer-contacts__item">
+        <h3 class="page-footer-contacts__title">Пишите:</h3>
+        <a class="page-footer-contacts__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </li>
-      <li class="footer-contacts__item">
-        <h3 class="footer-contacts__title">Приезжайте в гости:</h3>
-        <a class="footer-contacts__link" href="#">ул. Большая
+      <li class="page-footer-contacts__item">
+        <h3 class="page-footer-contacts__title">Приезжайте в гости:</h3>
+        <a class="page-footer-contacts__link" href="#">ул. Большая
           Конюшенная, 19/8</a>
       </li>
     </ul>
     <img src="img/map.png" alt="ул. Большая Конюшенная, 19/8">
 
+    <div class="page-footer__lower-wrapper">
     <a class="page-footer__logo" href="index.html">
       <span class="visually-hidden">Ссылка на главную</span>
       <svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,6 +302,8 @@
         </svg>
       </a>
     </p>
+  </div>
+  </div>
   </footer>
 </body>
 

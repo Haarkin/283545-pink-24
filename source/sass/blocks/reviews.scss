@@ -1,6 +1,40 @@
-.reviews__wrapper {
+.reviews {
   background-image: url("../../../img/backgrounds/greybackground.jpg");
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 100px 130px 130px 130px;
+}
+
+.reviews__wrapper {
+  width: 288px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+}
+
+.reviews__text {
+  text-align: center;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
