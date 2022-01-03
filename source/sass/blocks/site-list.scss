@@ -7,6 +7,7 @@
 .site-list__item {
   display: flex;
   justify-content: center;
+
   @media (min-width: $desktop-width) {
     margin-right: 79px;
   }
