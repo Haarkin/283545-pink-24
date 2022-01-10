@@ -14,13 +14,20 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    padding-left: 330px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 940px;
+    padding-left: 500px;
   }
 }
 
 .study__title {
   font-weight: bold;
+  font-size: 30px;
+}
+
+.study__link {
+  color: $red;
 }

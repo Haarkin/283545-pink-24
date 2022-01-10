@@ -1,11 +1,6 @@
 .page-footer {
   background-color: $white;
 
-  a {
-    color: $red;
-    text-decoration: none;
-  }
-
   h2 {
     text-align: center;
   }
@@ -23,37 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
   }
-}
-
-.page-footer-contacts {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-}
-
-.page-footer-contacts__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 100px;
-
-    &:last-child {
-      margin-right: 0;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-.page-footer-contacts__title {
-  text-align: center;
 }
 
 .page-footer__lower-wrapper {
@@ -63,5 +29,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 }

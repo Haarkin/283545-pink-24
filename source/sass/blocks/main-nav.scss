@@ -1,6 +1,13 @@
 .main-nav {
   text-transform: uppercase;
   font-weight: bold;
+  padding: 0;
+  display: flex;
+  height: max-content;
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+  }
 }
 
 .main-nav__list {
@@ -16,12 +23,12 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
 .main-nav__list a {
   color: $white;
+  height: min-content;
 }
 
 .main-nav__toggle {

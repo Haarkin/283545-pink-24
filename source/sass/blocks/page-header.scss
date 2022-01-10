@@ -1,16 +1,32 @@
 .page-header {
+  padding: 0;
+  margin: 0;
   background-color: $dark-grey;
 }
 
 .page-header__wrapper {
   width: 288px;
   margin: 0 auto;
+  display: flex;
+  padding: 20px;
+  padding-top: 27px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 100%;
+    padding-left: 130px;
+    padding-right: 130px;
   }
+}
+
+.page-header__logo {
+  flex-grow: 1;
+  padding: 0;
+  width: 74px;
+  height: min-content;
 }

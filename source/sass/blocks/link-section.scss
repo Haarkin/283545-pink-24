@@ -12,11 +12,23 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    padding-right: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 940px;
   }
+}
+
+.link-section__button {
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  padding: 21px 49px;
+  outline: solid 3px $white;
+  border-radius: 29px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .link-section__list {
@@ -26,6 +38,6 @@
   padding: 0;
 }
 
-.link-section p {
+.link-section__accesibility {
   text-align: center;
 }

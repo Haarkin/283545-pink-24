@@ -1,6 +1,7 @@
 .reviews {
-  background-image: url("../../../img/backgrounds/greybackground.jpg");
+  background-image: url("../img/backgrounds/greybackground.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .reviews__wrapper {
@@ -12,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 940px;
   }
 }
 
@@ -24,10 +25,27 @@
 
 .reviews__author-name {
   font-weight: bold;
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reviews__author-identity {
+  order: 2;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .reviews__text {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .reviews__toggles {

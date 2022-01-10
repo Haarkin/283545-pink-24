@@ -1,0 +1,5 @@
+.head:first-child {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

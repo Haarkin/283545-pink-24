@@ -1,6 +1,7 @@
 .proposal {
   background-image: url("../img/backgrounds/greybackground.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -17,22 +18,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 940px;
   }
 }
 
 .proposal__table {
   width: 832px;
-}
 
-.head:first-child {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $tablet-width) {
+    width: 616px;
   }
-}
 
-.advantage:first-child {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
