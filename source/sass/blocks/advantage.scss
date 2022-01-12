@@ -1,0 +1,12 @@
+
+.advantage:first-child {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.advantage__name {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

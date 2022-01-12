@@ -3,6 +3,20 @@
 }
 
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 320px;
+  line-height: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-right: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }

@@ -1,6 +1,43 @@
 .link-section {
   background-color: $night-grey;
   color: $white;
-  padding-left: 130px;
-  padding-right: 130px;
+}
+
+.link-section__wrapper {
+  width: 288px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 650px;
+    padding-right: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
+  }
+}
+
+.link-section__button {
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  padding: 21px 49px;
+  outline: solid 3px $white;
+  border-radius: 29px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.link-section__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-section__accesibility {
+  text-align: center;
 }

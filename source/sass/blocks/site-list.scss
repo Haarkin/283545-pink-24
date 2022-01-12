@@ -1,4 +1,30 @@
+.site-list {
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    height: min-content;
+  }
+}
+
+.site-list__item {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+    height: min-content;
+  }
+}
+
 .site-list__link {
+  padding: 0;
+  margin: 0;
   color: $white;
   text-decoration: none;
+  text-align: center;
 }

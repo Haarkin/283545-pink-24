@@ -1,0 +1,13 @@
+.site-contacts {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.site-contacts__contact {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

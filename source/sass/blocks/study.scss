@@ -1,0 +1,46 @@
+.study {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.study__wrapper {
+  width: 288px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-left: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding-left: 500px;
+  }
+}
+
+.study__title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.study__text {
+  font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.study__link {
+  color: $red;
+  font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
