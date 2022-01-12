@@ -5,20 +5,21 @@
 }
 
 .page-header__wrapper {
-  width: 288px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   padding: 20px;
   padding-top: 27px;
   padding-bottom: 43px;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    flex-direction: row;
+    width: 1200px;
     padding-left: 130px;
     padding-right: 130px;
   }

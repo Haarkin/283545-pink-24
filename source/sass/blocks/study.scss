@@ -28,6 +28,19 @@
   font-size: 30px;
 }
 
+.study__text {
+  font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
 .study__link {
   color: $red;
+  font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }

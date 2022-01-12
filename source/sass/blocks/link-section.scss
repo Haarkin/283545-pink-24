@@ -11,12 +11,12 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    min-width: 650px;
     padding-right: 340px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    min-width: 940px;
   }
 }
 
