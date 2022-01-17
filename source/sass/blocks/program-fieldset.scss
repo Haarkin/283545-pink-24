@@ -1,4 +1,28 @@
+.program-fieldset {
+  width: 100%;
+  margin-bottom: 42px;
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin-bottom: 70px;
+  }
+}
+
 .program-fieldset__title {
   color: $red;
   text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.program-fieldset__field {
+  padding: 22px 20px;
+  font-size: 18px;
+  border: none;
+  outline: 2px $fog-grey solid;
+  width: 100%;
+  min-height: 200px;
 }

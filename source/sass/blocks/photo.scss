@@ -1,0 +1,48 @@
+.photo {
+  padding-top: 180px;
+  padding-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 400px;
+  }
+
+  &:first-child {
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 506px;
+    }
+  }
+}
+
+.photo__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.photo__author-name {
+  font-weight: bold;
+}
+
+.photo__time-ago {
+  text-transform: uppercase;
+}
+
+.photo__author-info {
+  margin: 0;
+  width: 100%;
+}
+
+.photo__like-counter {
+  color: $red;
+}

@@ -1,4 +1,46 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 42px;
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.contact-form__list {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
+}
+
+.contact-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form__title {
   color: $red;
   text-transform: uppercase;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
 }

@@ -1,3 +1,64 @@
 .editor {
-  padding: 100px 130px 130px 130px;
+  background-color: $grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 47px;
+  }
+}
+
+.editor__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__tools {
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.editor__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__submit-button {
+  font-weight: bold;
+  color: $red;
+  text-decoration: none;
+  padding: 21px 49px;
+  outline: solid 3px $red;
+  border-radius: 29px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  text-transform: none;
+  margin-bottom: 12px;
+}
+
+.editor__cancel-button {
+  font-weight: bold;
+  color: $dark-grey;
+  opacity: 0.1;
+  text-decoration: none;
+  padding: 21px 49px;
+  outline: solid 3px $dark-grey;
+  border-radius: 29px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  text-transform: none;
 }

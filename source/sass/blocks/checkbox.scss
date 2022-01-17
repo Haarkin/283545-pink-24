@@ -1,0 +1,15 @@
+.checkbox__description {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 35px;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: $white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    outline: 2px $fog-grey solid;
+  }
+}

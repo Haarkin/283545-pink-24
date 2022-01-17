@@ -1,3 +1,38 @@
 .program-form {
   background-color: $grey;
+  margin-bottom: 42px;
+
+  @media (max-width: $mobile-width-only) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    order: 2;
+    margin-bottom: 65px;
+    padding: 54px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: min-content;
+  }
+}
+
+.program-form__list {
+  list-style: none;
+}
+
+.program-form__item {
+  padding-bottom: 38px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.program-form__title {
+  color: $red;
+  text-transform: uppercase;
+  margin: 0 auto;
 }

@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.item__input {
+  padding: 23px 20px;
+  font-size: 18px;
+  border: none;
+  outline: 2px $fog-grey solid;
+  appearance: textfield;
+}
