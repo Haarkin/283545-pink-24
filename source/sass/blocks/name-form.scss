@@ -1,8 +1,21 @@
 .name-form {
-  display: grid;
+  width: min-content;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    margin-right: 74px;
+  }
+}
+
+.name-form__wrapper {
+  display: grid;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
   }
 }

@@ -56,11 +56,11 @@
         путешествие с Пинк</p>
     </div>
     <form class="page-main__registration registration" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="registration__wrapper">
-        <p class="registration__announcement">Поделитесь своей историей и получите
-          шанс выиграть ценный приз — 1000
-          миль на вашу бонусную карту!</p>
-        <div class="registration__name-form name-form">
+      <p class="registration__announcement">Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!</p>
+      <div class="registration__name-form name-form">
+        <div class="name-form__wrapper">
           <div class="field">
             <label for="surname" class="field__label">
               Фамилия:
@@ -82,9 +82,11 @@
               name="second-name">
           </div>
         </div>
-        <fieldset class="registration__achievement-form achievement-form">
-          <legend class="achievement-form__title">Ваши безбашенные
-            достижения в путешествии</legend>
+      </div>
+      <fieldset class="registration__achievement-form achievement-form">
+        <legend class="achievement-form__title">Ваши безбашенные
+          достижения в путешествии</legend>
+        <div class="achievement-form__wrapper">
           <ul class="achievement-form__list">
             <li class="achievement-form__item">
               <label class="achievement-form__label checkbox">
@@ -123,9 +125,11 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="registration__contact-form contact-form">
-          <legend class="contact-form__title">Контактная информация</legend>
+        </div>
+      </fieldset>
+      <fieldset class="registration__contact-form contact-form">
+        <legend class="contact-form__title">Контактная информация</legend>
+        <div class="contact-form__wrapper">
           <div class="contact-form__list">
             <div class="contact-form__item item">
               <label for="phone" class="registration__label">
@@ -140,10 +144,12 @@
               <input class="item__input" placeholder="Введите почту *" type="email" id="email" name="email" required>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="registration__program-form program-form">
-          <legend class="program-form__title">С каким приложением
-            путешествовали?</legend>
+        </div>
+      </fieldset>
+      <fieldset class="registration__program-form program-form">
+        <legend class="program-form__title">С каким приложением
+          путешествовали?</legend>
+        <div class="program-form__wrapper">
           <ul class="program-form__list">
             <li class="program-form__item">
               <label class="control">
@@ -164,16 +170,19 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="registration__program-fieldset program-fieldset">
-          <legend class="program-fieldset__title">Опишите свои эмоции</legend>
+        </div>
+      </fieldset>
+      <fieldset class="registration__program-fieldset program-fieldset">
+        <legend class="program-fieldset__title">Опишите свои эмоции</legend>
+        <div class="program-fieldset__wrapper">
           <textarea class="program-fieldset__field" placeholder="Можно прям в красках, не стесняясь в выражениях"
             type="text" name="feeling-commentary"></textarea>
-        </fieldset>
-        <div class="registration__lower-wrapper">
-          <button class="button registration__submit-button" type="submit">Отправить форму</button>
-          <span class="registration__required">* — обязательные поля</span>
         </div>
+      </fieldset>
+      <div class="registration__lower-wrapper">
+        <button class="button registration__submit-button" type="submit">Отправить форму</button>
+        <span class="registration__required">* — обязательные поля</span>
+      </div>
       </div>
     </form>
   </main>
