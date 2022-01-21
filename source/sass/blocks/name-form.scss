@@ -3,13 +3,14 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    flex-grow: 1;
+    grid-area: name;
   }
 }
 
 .name-form__wrapper {
   display: grid;
   width: 280px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 618px;
