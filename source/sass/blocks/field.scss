@@ -1,4 +1,30 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+}
+
+.field__input {
+  padding: 23px 20px;
+  font-size: 18px;
+  border: 2px solid $fog-grey;
+  width: 100%;
+}
+
 .field__label {
   color: $red;
   text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 20px;
 }

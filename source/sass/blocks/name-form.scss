@@ -1,3 +1,22 @@
 .name-form {
+  width: min-content;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-area: name;
+  }
+}
+
+.name-form__wrapper {
   display: grid;
+  width: 280px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+  }
 }

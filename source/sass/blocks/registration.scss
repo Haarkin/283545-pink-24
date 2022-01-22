@@ -1,8 +1,79 @@
 .registration {
-  padding: 100px 130px 130px 130px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 432px 432px;
+    column-gap: 74px;
+    row-gap: 69px;
+    grid-template-areas:
+      "announce announce"
+      "name device"
+      "contact contact"
+      "achievement achievement"
+      "program program"
+      "button button";
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+}
+
+.registration__announcement {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 54px;
+  margin-bottom: 55px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    width: 280px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+    margin-bottom: 82px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: announce;
+    width: 940px;
+  }
 }
 
 .registration__label {
   color: $red;
   text-transform: uppercase;
+}
+
+.registration__lower-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    order: 6;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: button;
+    width: 100%;
+  }
+}
+
+.registration__submit-button {
+  width: 296px;
 }
