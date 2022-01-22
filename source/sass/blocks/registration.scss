@@ -1,18 +1,25 @@
 .registration {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: center;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 432px 432px;
     column-gap: 74px;
     row-gap: 69px;
-    grid-template-areas: "announce announce"
-                         "name device"
-                         "contact contact"
-                         "achievement achievement"
-                         "program program"
-                         "button button";
+    grid-template-areas:
+      "announce announce"
+      "name device"
+      "contact contact"
+      "achievement achievement"
+      "program program"
+      "button button";
     padding-left: 132px;
     padding-right: 132px;
   }
