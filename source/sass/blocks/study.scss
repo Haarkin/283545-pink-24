@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: $grey;
 
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
   }
 }
 
@@ -20,6 +25,8 @@
   @media (min-width: $desktop-width) {
     width: 940px;
     padding-left: 500px;
+    padding-top: 17px;
+    padding-bottom: 67px;
   }
 }
 

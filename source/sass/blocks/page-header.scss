@@ -9,9 +9,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   padding-top: 27px;
-  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -28,6 +26,8 @@
 .page-header__logo {
   flex-grow: 1;
   padding: 0;
+  padding-left: 20px;
+  padding-bottom: 23px;
   width: 74px;
   height: min-content;
 }

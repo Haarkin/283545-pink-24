@@ -2,6 +2,8 @@
   background-image: url("../img/backgrounds/greybackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  padding-bottom: 59px;
 }
 
 .advantages-section__wrapper {
@@ -29,9 +31,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 325px;
 
   @media (min-width: $tablet-width) {
     margin-left: 340px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +43,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 22px;
     margin-left: 0;
-    margin-bottom: 59px;
+    padding-bottom: 59px;
   }
 }
 

@@ -4,6 +4,15 @@
   background-size: 100%;
   overflow: hidden;
   position: relative;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 98px;
+  }
 }
 
 .proposal__wrapper {
