@@ -1,0 +1,21 @@
+.advantage-table__advantage:first-child .advantage {
+  border-top-width: 2px;
+  border-top-color: $dark-grey;
+}
+
+.advantage-table__advantage:first-child .advantage:first-child {
+  border-top-color: $grey;
+  border-top-left-radius: 4px;
+}
+
+.advantage-table__advantage:last-child .advantage {
+  border-bottom-width: 2px;
+}
+
+.advantage-table__advantage:last-child .advantage:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+.advantage-table__advantage:last-child .advantage:last-child {
+  border-bottom-right-radius: 4px;
+}

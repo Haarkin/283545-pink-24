@@ -33,6 +33,7 @@
 
 .proposal__table {
   width: 832px;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
     width: 616px;
@@ -40,5 +41,11 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.proposal__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

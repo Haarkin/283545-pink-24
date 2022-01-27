@@ -1,5 +1,33 @@
+.head {
+  background-color: $dark-grey;
+  color: $white;
+  padding: 24px 67px;
+  line-height: 15px;
+  border-right: 2px solid $white;
+
+  &:last-child {
+    border-right: 2px solid $dark-grey;
+    border-top-right-radius: 4px;
+  }
+}
+
 .head:first-child {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    border-right: none;
+  }
+}
+
+.head:nth-child(2) {
+  border-left: 2px solid $dark-grey;
+  border-top-left-radius: 4px;
+}
+
+.head__title {
+  margin: 0;
+  margin-bottom: 15px;
 }

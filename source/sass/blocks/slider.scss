@@ -1,0 +1,19 @@
+.slider__toggle {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 19px;
+  background-color: $dark-grey;
+  opacity: 0.3;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slider__toggle--current {
+  border: 3px solid $black;
+  background-color: $white;
+  opacity: 1;
+}

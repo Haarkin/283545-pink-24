@@ -1,12 +1,39 @@
+.advantage {
+  background-color: $white;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 22px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid $grey;
+
+  @media (max-width: $mobile-width-only) {
+    background-position: top 50% right 19px;
+  }
+}
 
 .advantage:first-child {
+  border-left-width: 2px;
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+}
+
+.advantage:last-child {
+  border-right-width: 2px;
 }
 
 .advantage__name {
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.advantage--true {
+  background-image: url("../img/yes.svg");
+}
+
+.advantage--false {
+  background-image: url("../img/no.svg");
 }

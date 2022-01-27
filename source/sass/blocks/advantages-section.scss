@@ -3,7 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding-bottom: 59px;
+  margin-bottom: 59px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages-section__wrapper {
@@ -32,18 +36,24 @@
   padding: 0;
   list-style: none;
   padding-bottom: 325px;
+  background-image: url("../img/backgrounds/pink-screen-small.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
   @media (min-width: $tablet-width) {
-    margin-left: 340px;
+    padding-left: 340px;
     padding-bottom: 49px;
+    background-image: url("../img/backgrounds/pink-screen-medium.png");
+    background-position: left bottom;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 22px;
-    margin-left: 0;
+    padding-left: 0;
     padding-bottom: 59px;
+    background-image: none;
   }
 }
 
@@ -69,6 +79,26 @@
     margin-bottom: 0;
     padding-top: 360px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+.advantages-section__item--happiness {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-grey.png");
+  }
+}
+
+.advantages-section__item--change {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-coloured.png");
+  }
+}
+
+.advantages-section__item--friends {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-smile.png");
   }
 }
 
@@ -83,7 +113,6 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     margin-bottom: 0;
-    padding-top: 360px;
     text-align: center;
     font-size: 30px;
   }
