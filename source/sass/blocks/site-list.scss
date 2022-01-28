@@ -13,12 +13,6 @@
   }
 }
 
-.main-nav--closed .site-list {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .site-list a {
   position: relative;
   display: block;

@@ -11,16 +11,6 @@
   }
 }
 
-.main-nav--opened .page-header {
-  background-color: $dark-grey;
-}
-
-.main-nav--closed .site-list {
-  @media (max-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .main-nav__list {
   list-style-type: none;
   margin: 0 auto;
