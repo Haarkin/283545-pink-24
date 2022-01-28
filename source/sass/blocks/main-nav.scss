@@ -15,6 +15,12 @@
   background-color: $dark-grey;
 }
 
+.main-nav--closed .site-list {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .main-nav__list {
   list-style-type: none;
   margin: 0 auto;
@@ -83,10 +89,10 @@
   }
 
   &:active::before {
-    background-color: fade($red, 30%);
+    background-color: rgba($red, 0.3);
     box-shadow:
-      0 10px 0 0 fade($red, 30%),
-      0 20px 0 0 fade($red, 30%);
+      0 10px 0 0 rgba($red, 0.3),
+      0 20px 0 0 rgba($red, 0.3);
   }
 }
 
@@ -118,6 +124,6 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade($red, 30%);
+    background-color: rgba($red, 0.3);
   }
 }

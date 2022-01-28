@@ -25,16 +25,14 @@
 .page-footer iframe {
   display: block;
   border: none;
-  width: 320px;
+  width: 100%;
   height: 200px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
     height: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     height: 502px;
   }
 }
