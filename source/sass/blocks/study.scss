@@ -6,6 +6,10 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey;
+  }
 }
 
 .study__wrapper {
@@ -15,11 +19,17 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     padding-left: 330px;
+    background-image: url("../img/taimer-small.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     padding-left: 500px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+    background-image: url("../img/taimer-large.svg");
   }
 }
 

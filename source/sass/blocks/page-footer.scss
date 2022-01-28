@@ -22,6 +22,21 @@
   }
 }
 
+.page-footer iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
+}
+
 .page-footer__lower-wrapper {
   display: flex;
   flex-direction: column;

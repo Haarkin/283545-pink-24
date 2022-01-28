@@ -1,7 +1,24 @@
 .advantages-section {
-  background-image: url("../img/backgrounds/greybackground.jpg");
+  background-image: url("../img/backgrounds/triangle.svg"), linear-gradient($white 30px, transparent 30px);
+  background-color: $grey;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 30px, auto;
+  background-position: 0 30px, 0 0;
+  margin: 0;
+  margin-bottom: 59px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/backgrounds/triangle.svg"), linear-gradient($white 55px, transparent 55px);
+    background-position: 0 55px, 0 0;
+    background-size: 100% 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/triangle.svg"), linear-gradient($white 100px, transparent 100px);
+    background-position: 0 100px, 0 0;
+    background-size: 100% 100px;
+    margin-bottom: 0;
+  }
 }
 
 .advantages-section__wrapper {
@@ -29,17 +46,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 325px;
+  background-image: url("../img/backgrounds/pink-screen-small.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
   @media (min-width: $tablet-width) {
-    margin-left: 340px;
+    padding-left: 340px;
+    padding-bottom: 49px;
+    background-image: url("../img/backgrounds/pink-screen-medium.png");
+    background-position: left bottom;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 22px;
-    margin-left: 0;
-    margin-bottom: 59px;
+    padding-left: 0;
+    padding-bottom: 59px;
+    background-image: none;
   }
 }
 
@@ -65,6 +90,26 @@
     margin-bottom: 0;
     padding-top: 360px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+
+.advantages-section__item--happiness {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-grey.png");
+  }
+}
+
+.advantages-section__item--change {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-coloured.png");
+  }
+}
+
+.advantages-section__item--friends {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/backgrounds/pink-screen-smile.png");
   }
 }
 
@@ -79,7 +124,6 @@
   @media (min-width: $desktop-width) {
     align-items: center;
     margin-bottom: 0;
-    padding-top: 360px;
     text-align: center;
     font-size: 30px;
   }

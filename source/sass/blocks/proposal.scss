@@ -1,9 +1,22 @@
 .proposal {
-  background-image: url("../img/backgrounds/greybackground.jpg");
+  background-image: url("../img/backgrounds/triangle.svg");
+  background-color: $grey;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 30px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+    background-size: 100% 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100% 100px;
+    padding-top: 128px;
+    padding-bottom: 98px;
+  }
 }
 
 .proposal__wrapper {
@@ -24,6 +37,7 @@
 
 .proposal__table {
   width: 832px;
+  border-spacing: 0;
 
   @media (min-width: $tablet-width) {
     width: 616px;
@@ -31,5 +45,11 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+  }
+}
+
+.proposal__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
