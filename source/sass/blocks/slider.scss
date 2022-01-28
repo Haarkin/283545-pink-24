@@ -1,11 +1,13 @@
 .slider__toggle {
   width: 12px;
   height: 12px;
-  border: none;
   border-radius: 6px;
   margin-right: 19px;
   background-color: $dark-grey;
   opacity: 0.3;
+  padding: 0;
+  border: 3px solid transparent;
+  background-clip: content-box;
 
   &:last-child {
     margin-right: 0;

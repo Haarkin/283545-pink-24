@@ -14,11 +14,10 @@
 
 .title-wrapper__lower-wrapper {
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 320px;
   background-image: url("../img/backgrounds/handphone-small.png");
 
   @media (min-width: $tablet-width) {
@@ -26,7 +25,7 @@
     width: 640px;
     padding-right: 340px;
     padding-bottom: 120px;
-    background-position: bottom  right;
+    background-position: bottom right;
     background-image: url("../img/backgrounds/handphone-medium.png");
     padding-top: 102px;
   }
