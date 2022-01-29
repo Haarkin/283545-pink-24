@@ -2,6 +2,10 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $desktop-width) {
+    background-color: $grey;
+  }
 }
 
 .editor__form {
