@@ -1,6 +1,5 @@
 .photo {
   padding-top: 180px;
-  padding-left: 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 300px;
@@ -28,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 17px;
 }
 
 .photo__author-name {
@@ -45,4 +45,5 @@
 
 .photo__like-counter {
   color: $red;
+  margin-left: 17px;
 }

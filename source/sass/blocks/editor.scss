@@ -1,5 +1,4 @@
 .editor {
-  background-color: $grey;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -8,6 +7,7 @@
 .editor__form {
   display: flex;
   flex-direction: column;
+  background-color: $grey;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -35,6 +35,31 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
+}
+
+.editor__item {
+  padding-bottom: 34px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid rgb($dark-grey, 0.1);
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.editor__crop-icon {
+  background: none;
+  border: none;
+}
+
+.editor__fill-icon {
+  background: none;
+  border: none;
+}
+
+.editor__change-icon {
+  background: none;
+  border: none;
 }
 
 .editor__buttons {

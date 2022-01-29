@@ -14,3 +14,16 @@
     border-radius: 50%;
   }
 }
+
+.control-input[type="radio"]:checked + .control-label::after {
+  width: 15px;
+  height: 15px;
+  background-image: none;
+  background-color: $red;
+  border-radius: 50%;
+  content: "";
+  margin-left: 11px;
+  margin-top: 11px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
