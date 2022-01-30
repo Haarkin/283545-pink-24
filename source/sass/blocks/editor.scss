@@ -79,6 +79,12 @@
   }
 }
 
+.editor__range {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .editor__item--chosen .editor__range {
   @media (max-width: $mobile-width-only) {
     position: absolute;
