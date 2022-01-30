@@ -1,0 +1,47 @@
+.range {
+  position: relative;
+  height: 2px;
+  background-color: $dark-grey;
+  width: 202px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.editor__item--chosen .range {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    position: absolute;
+    border-bottom: 1px solid rgb($dark-grey, 0.1);
+    margin: 0 auto;
+    margin-bottom: 36px;
+    left: 10%;
+    width: 75%;
+  }
+}
+
+.range__toggle {
+  padding: 0;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid $red;
+  background-color: $white;
+}
+
+.range--cut .range__toggle {
+  margin-left: 25px;
+}
+
+.range--fill .range__toggle {
+  margin-left: 160px;
+}
+
+.range--change .range__toggle {
+  margin-left: 96px;
+}
