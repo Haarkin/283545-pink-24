@@ -18,20 +18,20 @@
   background-color: $white;
 }
 
-.range__fill, .range__change {
+.range--fill, .range__change {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
 
-.range__cut .range__toggle {
+.range--cut .range__toggle {
   margin-left: 25px;
 }
 
-.range__fill .range__toggle {
+.range--fill .range__toggle {
   margin-left: 160px;
 }
 
-.range__change .range__toggle {
+.range--change .range__toggle {
   margin-left: 96px;
 }

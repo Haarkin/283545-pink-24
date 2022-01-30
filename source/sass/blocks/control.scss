@@ -1,4 +1,4 @@
-.control-label {
+.control__label {
   display: grid;
   grid-template-columns: 37px 1fr;
   gap: 37px;
@@ -15,7 +15,7 @@
   }
 }
 
-.control-input[type="radio"]:checked + .control-label::after {
+.control__input[type="radio"]:checked + .control__label::after {
   width: 15px;
   height: 15px;
   background-image: none;

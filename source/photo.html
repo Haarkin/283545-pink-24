@@ -30,7 +30,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="photo.html">
+            <a class="site-list__link">
               Фотографии
             </a>
           </li>
@@ -59,7 +59,7 @@
           Видите, как не хватает ваших?</p>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__photo photo">
-            <img class="photo__img photo__img--top" src="../img/panorama-small.png" alt="Панорама гор">
+            <img class="photo__img photo__img--top" src="./img/panorama-small.png" alt="Панорама гор">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Анна</figcaption>
               <span class="photo__time-ago">(5 минут назад)</span>
@@ -73,7 +73,7 @@
             <span class="photo__like-counter">Нравится: 215</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/car-small.png" alt="Машина с Луны">
+            <img class="photo__img" src="./img/car-small.png" alt="Машина с Луны">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Левон</figcaption>
               <span class="photo__time-ago">(5 часов назад)</span>
@@ -84,7 +84,7 @@
             <span class="photo__like-counter">Нравится: 356</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/drums-small.png" alt="Комплект барабанщика">
+            <img class="photo__img" src="./img/drums-small.png" alt="Комплект барабанщика">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Антон</figcaption>
               <span class="photo__time-ago">(12 часов назад)</span>
@@ -95,7 +95,7 @@
             <span class="photo__like-counter">Нравится: 666</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/window-small.png" alt="Вид из небоскреба">
+            <img class="photo__img" src="./img/window-small.png" alt="Вид из небоскреба">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Борис</figcaption>
               <span class="photo__time-ago">(20 часов назад)</span>
@@ -106,7 +106,7 @@
             <span class="photo__like-counter">Нравится: 215</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/bachcha-small.png" alt="Кубанская бахча">
+            <img class="photo__img" src="./img/bachcha-small.png" alt="Кубанская бахча">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Сергей</figcaption>
               <span class="photo__time-ago">(25 часов назад)</span>
@@ -117,7 +117,7 @@
             <span class="photo__like-counter">Нравится: 4</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/mountain-small.png" alt="Вершина горы">
+            <img class="photo__img" src="./img/mountain-small.png" alt="Вершина горы">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Максим</figcaption>
               <span class="photo__time-ago">(40 часов назад)</span>
@@ -128,7 +128,7 @@
             <span class="photo__like-counter">Нравится: 150</span>
           </li>
           <li class="photo-gallery__photo photo">
-            <img class="photo__img" src="../img/wing-small.png" alt="Крыло самолета">
+            <img class="photo__img" src="./img/wing-small.png" alt="Крыло самолета">
             <figure class="photo__item">
               <figcaption class="photo__author-name">Надежда</figcaption>
               <span class="photo__time-ago">(45 часов назад)</span>
@@ -147,7 +147,7 @@
       <h2 class="visually-hidden">Редактор</h2>
       <form class="editor__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="editor__image-wrapper">
-          <img class="editor__image" src="../img/editor-image.png" alt="Редактируемое фото">
+          <img class="editor__image" src="./img/editor-image.png" alt="Редактируемое фото">
         </div>
         <div class="editor__wrapper">
           <div class="editor__tools">
@@ -158,13 +158,13 @@
                   <path d="M16 14H18V6C18 5.46957 17.7893 4.96086 17.4142 4.58579C17.0391 4.21071 16.5304 4 16 4H8V6H16V14ZM6 16V0H4V4H0V6H4V16C4 16.5304 4.21071 17.0391 4.58579 17.4142C4.96086 17.7893 5.46957 18 6 18H16V22H18V18H22V16H6Z" fill="#D22856"/>
                 </svg>
               </button>
-              <div class="editor__range range range__cut">
+              <div class="editor__range range range--cut">
                 <button class="range__toggle" type="button">
                   <span class="visually-hidden">Изменить</span>
                 </button>
               </div>
             </div>
-            <div class="editor__item">
+            <div class="editor__item item">
               <button class="editor__fill-icon" type="button">
                 <svg width="48" height="43" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16.56 9.14791L7.62 0L6.205 1.44791L8.585 3.88326L3.44 9.14791C3.1591 9.4357 3.00132 9.82581 3.00132 10.2326C3.00132 10.6393 3.1591 11.0294 3.44 11.3172L8.94 16.9451C9.22125 17.2325 9.6025 17.394 10 17.394C10.3975 17.394 10.7787 17.2325 11.06 16.9451L16.56 11.3172C16.8409 11.0294 16.9987 10.6393 16.9987 10.2326C16.9987 9.82581 16.8409 9.4357 16.56 9.14791ZM5.205 10.2326L10 5.33116L14.795 10.2326H5.205ZM19 11.7674C19 11.7674 17 13.9828 17 15.3488C17 15.8916 17.2107 16.4121 17.5858 16.7959C17.9609 17.1797 18.4696 17.3953 19 17.3953C19.5304 17.3953 20.0391 17.1797 20.4142 16.7959C20.7893 16.4121 21 15.8916 21 15.3488C21 13.9828 19 11.7674 19 11.7674Z" fill="#D22856"/>
@@ -172,7 +172,7 @@
                 </svg>
               </button>
               <span class="visually-hidden">Заливка</span>
-              <div class="editor__range range range__fill">
+              <div class="editor__range range range--fill">
                 <button class="range__toggle" type="button">
                   <span class="visually-hidden">Изменить</span>
                 </button>
@@ -186,7 +186,7 @@
                 </svg>
               </button>
               <span class="visually-hidden">Контраст</span>
-              <div class="editor__range range range__change">
+              <div class="editor__range range range--change">
                 <button class="range__toggle" type="button">
                   <span class="visually-hidden">Изменить</span>
                 </button>

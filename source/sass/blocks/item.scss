@@ -7,15 +7,6 @@
   }
 }
 
-.item__phone {
-  background-image: url("../img/phone.svg");
-  appearance: textfield;
-}
-
-.item__mail {
-  background-image: url("../img/mail.svg");
-}
-
 .item__input {
   padding: 23px 20px;
   font-size: 18px;
@@ -26,5 +17,13 @@
 
   @media (max-width: $mobile-width-only) {
     background-image: none;
+  }
+
+  &--phone {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--mail {
+    background-image: url("../img/mail.svg");
   }
 }

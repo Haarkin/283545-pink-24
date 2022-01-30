@@ -24,8 +24,8 @@
           </span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">
+          <li class="site-list__item">
+            <a class="site-list__link"  href="index.html">
               Главная
             </a>
           </li>
@@ -34,8 +34,8 @@
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">
               Конкурс
             </a>
           </li>
@@ -136,13 +136,13 @@
               <label for="phone" class="registration__label">
                 Номер телефона
               </label>
-              <input class="item__input item__phone" placeholder="Номер, пожалуйста" type="number" id="phone" name="phone">
+              <input class="item__input item__input--phone" placeholder="Номер, пожалуйста" type="tel" id="phone" name="phone">
             </div>
             <div class="contact-form__item item">
               <label for="email" class="registration__label">
                 Адрес почты
               </label>
-              <input class="item__input item__mail" placeholder="Введите почту *" type="email" id="email" name="email" required>
+              <input class="item__input item__input--mail" placeholder="Введите почту *" type="email" id="email" name="email" required>
             </div>
           </div>
         </fieldset>
@@ -154,20 +154,20 @@
           <ul class="device-form__list">
             <li class="device-form__item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="device-group" value="iOS" checked>
-                <span class="control-label">Pink для iOS</span>
+                <input class="visually-hidden control__input" type="radio" name="device-group" value="iOS" checked>
+                <span class="control__label">Pink для iOS</span>
               </label>
             </li>
             <li class="device-form__item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="device-group" value="Android">
-                <span class="control-label">Pink на Android</span>
+                <input class="visually-hidden control__input" type="radio" name="device-group" value="Android">
+                <span class="control__label">Pink на Android</span>
               </label>
             </li>
             <li class="device-form__item">
               <label class="control">
-                <input class="visually-hidden control-input" type="radio" name="device-group" value="Windows Phone">
-                <span class="control-label">Windows Phone</span>
+                <input class="visually-hidden control__input" type="radio" name="device-group" value="Windows Phone">
+                <span class="control__label">Windows Phone</span>
               </label>
             </li>
           </ul>
