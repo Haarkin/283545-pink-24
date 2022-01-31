@@ -9,7 +9,92 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 144px;
+
+  @media (min-width: $tablet-width) {
+    height: 155px;
+  }
+}
+
+.photo__img {
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}
+
+.photo__img--top {
+  width: 100vw;
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
+}
+
+.photo__img--top {
+  max-width: none;
+}
+
+.photo--featured {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.photo--featured picture {
+  display: flex;
+  justify-content: center;
+}
+
+.photo--featured .photo__author-name {
+  order: 1;
+}
+
+.photo--featured .photo__time-ago {
+  order: 1;
+  margin-right: auto;
+}
+
+.photo--featured .photo__author-info {
+  order: 4;
+}
+
+.photo--featured .photo__like-counter {
+  order: 2;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+  }
+}
+
+.photo--featured .photo__like-button {
+  order: 2;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .photo__author-name {
@@ -27,5 +112,20 @@
 
 .photo__like-counter {
   color: $red;
-  margin-left: 17px;
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+}
+
+.photo__like-button {
+  background: none;
+  border: none;
+  height: 12px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
