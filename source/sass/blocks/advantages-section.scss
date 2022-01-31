@@ -51,11 +51,19 @@
   background-repeat: no-repeat;
   background-position: 50% 100%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backgrounds/pink-screen-small@2px.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 340px;
     padding-bottom: 49px;
     background-image: url("../img/backgrounds/pink-screen-medium.png");
     background-position: left bottom;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/pink-screen-medium@2px.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -98,18 +106,30 @@
 .advantages-section__item--happiness {
   @media (min-width: $desktop-width) {
     background-image: url("../img/backgrounds/pink-screen-grey.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/pink-screen-grey@2px.png");
+    }
   }
 }
 
 .advantages-section__item--change {
   @media (min-width: $desktop-width) {
     background-image: url("../img/backgrounds/pink-screen-coloured.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/pink-screen-coloured@2px.png");
+    }
   }
 }
 
 .advantages-section__item--friends {
   @media (min-width: $desktop-width) {
     background-image: url("../img/backgrounds/pink-screen-smile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backgrounds/pink-screen-smile@2px.png");
+    }
   }
 }
 
