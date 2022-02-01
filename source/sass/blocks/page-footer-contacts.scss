@@ -42,6 +42,17 @@
   }
 }
 
+.page-footer-contacts__item:nth-child(2) .page-footer-contacts__link {
+  &:hover {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgb($dark-grey, 0.3);
+  }
+}
+
 .page-footer-contacts__title {
   text-align: center;
 }

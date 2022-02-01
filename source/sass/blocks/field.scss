@@ -20,6 +20,14 @@
   font-size: 18px;
   border: 2px solid $fog-grey;
   width: 100%;
+
+  &:hover {
+    border-color: $dark-grey;
+  }
+
+  &:focus:not(:placeholder-shown) {
+    border-color: $red;
+  }
 }
 
 .field__label {

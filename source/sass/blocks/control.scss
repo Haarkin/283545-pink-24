@@ -13,6 +13,18 @@
     border: 2px $fog-grey solid;
     border-radius: 50%;
   }
+
+  &:hover {
+    &::before {
+      border-color: $dark-grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $red;
+    }
+  }
 }
 
 .control__input[type="radio"]:checked + .control__label::after {

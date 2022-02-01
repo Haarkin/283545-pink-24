@@ -11,4 +11,16 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    .site-contacts__circle {
+      opacity: 1;
+    }
+  }
+}
+
+.site-contacts__contact-logo {
+  &:active {
+    opacity: 0.1;
+  }
 }

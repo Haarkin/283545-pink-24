@@ -94,6 +94,14 @@
     border: none;
     background-color: transparent;
     padding-bottom: 150px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 

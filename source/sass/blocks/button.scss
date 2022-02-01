@@ -7,4 +7,17 @@
   color: $white;
   border-radius: 1px;
   font-weight: bold;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgb($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey;
+  }
 }
