@@ -10,11 +10,12 @@
 
 .title-wrapper__lower-wrapper {
   background-repeat: no-repeat;
-  background-position: center 190px;
+  background-position: center 116px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: url("../img/backgrounds/handphone-small.png");
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;

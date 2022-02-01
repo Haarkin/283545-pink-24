@@ -23,7 +23,7 @@
   font-weight: bold;
   color: $white;
   text-decoration: none;
-  padding: 21px 49px;
+  padding: 16px 37px;
   border: 3px solid $white;
   border-radius: 29px;
   font-size: 18px;
@@ -55,13 +55,15 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .link-section__accesibility {
   text-align: center;
   margin: 0;
   width: 300px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .link-section__item {
