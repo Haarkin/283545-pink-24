@@ -9,6 +9,10 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .editor__item--chosen .range {
@@ -32,6 +36,10 @@
   border-radius: 50%;
   border: 2px solid $red;
   background-color: $white;
+
+  &:active {
+    background-color: $red;
+  }
 }
 
 .range--cut .range__toggle {

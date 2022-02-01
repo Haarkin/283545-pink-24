@@ -22,6 +22,37 @@
   }
 }
 
+.page-footer__logo {
+  &:hover {
+    .page-footer__pink-logo {
+      fill: $red;
+    }
+  }
+
+  &:active {
+    .page-footer__pink-logo {
+      fill: $dark-grey;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__pink-logo {
+  fill: $dark-grey;
+}
+
+.page-footer__logo-tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  @media (max-width: $predesktop-width) {
+    display: none;
+  }
+}
+
 .page-footer iframe {
   display: block;
   border: none;

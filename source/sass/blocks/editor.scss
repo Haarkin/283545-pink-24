@@ -96,17 +96,55 @@
   }
 }
 
+.editor__icon {
+  fill: $red;
+
+  @media (max-width: $mobile-width-only) {
+    fill: $dark-grey;
+    opacity: 0.3;
+
+    &--active {
+      fill: $red;
+      opacity: 1;
+    }
+  }
+}
+
+.editor__item:hover .editor__icon {
+  opacity: 0.5;
+}
+
 .editor__crop-icon {
   background: none;
   border: none;
+
+  svg {
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
 }
 
 .editor__fill-icon {
   background: none;
   border: none;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
+  svg {
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
+    }
   }
 }
 
@@ -114,8 +152,16 @@
   background: none;
   border: none;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: column;
+  svg {
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -126,6 +172,10 @@
   @media (max-width: $mobile-width-only) {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
@@ -141,6 +191,20 @@
   background-color: transparent;
   text-transform: none;
   margin-bottom: 12px;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $red;
+    color: rgb($white, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .editor__cancel-button {
@@ -155,4 +219,14 @@
   line-height: 18px;
   background-color: transparent;
   text-transform: none;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: $dark-grey;
+    color: $white;
+  }
 }

@@ -1,4 +1,4 @@
-.htmlacademy-link {
+.about-text__htmlacademy-link {
   display: flex;
   align-items: center;
   color: $black;
@@ -7,4 +7,21 @@
   span {
     margin-right: 15px;
   }
+
+  &:hover {
+    .about-text__htmlacademy-logo {
+      fill: $dark-grey;
+    }
+  }
+
+  &:active {
+    .about-text__htmlacademy-logo {
+      fill: $dark-grey;
+      opacity: 0.3;
+    }
+  }
+}
+
+.about-text__htmlacademy-logo {
+  fill: $red;
 }

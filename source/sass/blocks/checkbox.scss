@@ -12,6 +12,18 @@
     grid-row: 1 / 2;
     border: 2px solid $fog-grey;
   }
+
+  &:hover {
+    &::before {
+      border-color: $dark-grey;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $red;
+    }
+  }
 }
 
 .checkbox__input:checked + .checkbox__description::after {

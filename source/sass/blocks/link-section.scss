@@ -33,6 +33,16 @@
   white-space: nowrap;
   margin-bottom: 32px;
 
+  &:hover {
+    color: $red;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgb($red, 0.3);
+    background-color: $white;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 21px;
     padding: 20px 32px;

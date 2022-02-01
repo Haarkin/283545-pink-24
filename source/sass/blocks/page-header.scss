@@ -58,4 +58,47 @@
   padding: 0;
   padding-left: 20px;
   height: min-content;
+
+  &:hover {
+    .page-header__pink-logo {
+      fill: $red;
+    }
+  }
+
+  &:active {
+    .page-header__pink-logo {
+      fill: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-header__pink-logo {
+  fill: $white;
+}
+
+.page-header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

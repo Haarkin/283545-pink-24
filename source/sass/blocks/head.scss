@@ -31,3 +31,18 @@
   margin: 0;
   margin-bottom: 15px;
 }
+
+.head--featured {
+  position: relative;
+}
+
+.head--featured::before {
+  content: "";
+  background-image: url("../img/backgrounds/hit-ribbon.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
