@@ -35,6 +35,7 @@
 .photo__img--top {
   width: 100vw;
   height: 137px;
+  max-width: none;
 
   @media (min-width: $tablet-width) {
     height: 509px;
@@ -43,10 +44,6 @@
   @media (min-width: $desktop-width) {
     height: 506px;
   }
-}
-
-.photo__img--top {
-  max-width: none;
 }
 
 .photo--featured {
