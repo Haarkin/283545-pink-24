@@ -1,6 +1,7 @@
 .achievement-form {
   background-color: $grey;
   margin-bottom: 42px;
+  padding-top: 55px;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
@@ -9,18 +10,23 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     order: 4;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
+    padding-top: 0;
+    margin-top: -7px;
   }
 
   @media (min-width: $desktop-width) {
     height: min-content;
     grid-area: achievement;
+    margin-bottom: -16px;
   }
 }
 
 .achievement-form__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding: 0;
+  padding-top: 22px;
 
   @media (max-width: $mobile-width-only) {
     border: none;
@@ -28,10 +34,12 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    padding-bottom: 0;
   }
 }
 
@@ -39,11 +47,23 @@
   color: $red;
   text-transform: uppercase;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  width: 223px;
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+  }
 }
 
 .achievement-form__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -54,7 +74,7 @@
 }
 
 .achievement-form__item {
-  padding-bottom: 47px;
+  padding-bottom: 42px;
 
   &:last-child {
     padding-bottom: 0;

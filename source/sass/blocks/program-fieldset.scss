@@ -5,18 +5,20 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     width: min-content;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: program;
+    margin-bottom: -14px;
   }
 }
 
 .program-fieldset__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
     border: none;
@@ -24,11 +26,16 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    padding-right: 58px;
+    padding-left: 58px;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     flex-direction: row;
+    padding-bottom: 46px;
   }
 }
 
@@ -36,6 +43,17 @@
   color: $red;
   text-transform: uppercase;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  width: 223px;
+  padding-top: 17px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 260px;
+  }
 }
 
 .program-fieldset__field {
@@ -44,4 +62,8 @@
   border: 2px solid $fog-grey;
   width: 100%;
   min-height: 200px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 124px;
+  }
 }

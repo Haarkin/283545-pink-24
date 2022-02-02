@@ -1,12 +1,12 @@
 .control__label {
   display: grid;
   grid-template-columns: 37px 1fr;
-  gap: 37px;
+  gap: 33px;
 
   &::before {
     content: "";
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     background-color: $white;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -28,13 +28,13 @@
 }
 
 .control__input[type="radio"]:checked + .control__label::after {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background-image: none;
   background-color: $red;
   border-radius: 50%;
   content: "";
-  margin-left: 11px;
+  margin-left: 14px;
   margin-top: 11px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;

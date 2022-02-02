@@ -2,8 +2,14 @@
   width: min-content;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: name;
+    margin-top: 34px;
+    margin-bottom: 0;
   }
 }
 
@@ -11,6 +17,8 @@
   display: grid;
   width: 280px;
   border: none;
+  padding: 0;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -18,5 +26,6 @@
 
   @media (min-width: $desktop-width) {
     width: 433px;
+    padding: 0;
   }
 }

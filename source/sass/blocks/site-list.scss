@@ -4,12 +4,17 @@
   display: flex;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     width: auto;
     justify-content: flex-end;
     flex-wrap: wrap;
     flex-grow: 2;
     height: min-content;
+    margin-top: 15px;
   }
 }
 
@@ -42,7 +47,7 @@
   justify-content: center;
 
   @media (min-width: $desktop-width) {
-    margin-right: 79px;
+    margin-right: 80px;
     height: min-content;
 
     &--active {

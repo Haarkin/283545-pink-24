@@ -7,15 +7,18 @@
     background-color: $white;
     order: 2;
     width: min-content;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: device;
+    margin-bottom: 0;
   }
 }
 
 .device-form__wrapper {
   margin: 0 auto;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
     width: 280px;
@@ -24,15 +27,17 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    padding-top: 10px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    padding-left: 74px;
-    padding-top: 54px;
-    padding-bottom: 54px;
-    padding-right: 74px;
+    padding-left: 0;
+    padding-top: 45px;
+    padding-bottom: 0;
+    padding-right: 65px;
     width: 431px;
   }
 }
@@ -41,10 +46,21 @@
   padding: 0;
   list-style: none;
   width: 100%;
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 69px;
+    margin: 0;
+    margin-bottom: 56px;
+  }
 }
 
 .device-form__item {
-  padding-bottom: 38px;
+  padding-bottom: 34px;
 
   &:last-child {
     padding-bottom: 0;
@@ -55,4 +71,14 @@
   color: $red;
   text-transform: uppercase;
   margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  width: 223px;
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 365px;
+    padding-top: 0;
+  }
 }

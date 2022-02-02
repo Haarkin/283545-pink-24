@@ -27,6 +27,30 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  &-paragraph {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 44px;
+    margin-bottom: 29px;
+
+    @media (max-width: $mobile-width-only) {
+      font-size: 14px;
+      width: 250px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 92px;
+      margin-bottom: 57px;
+      width: 562px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-area: announce;
+      width: 640px;
+      margin-bottom: 69px;
+    }
+  }
 }
 
 .photo-gallery__list {
@@ -46,4 +70,20 @@
 .photo-gallery__photo {
   background-color: $grey;
   list-style-type: none;
+}
+
+.photo-gallery__inspiration {
+  width: 255px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 88px;
+    width: 429px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }

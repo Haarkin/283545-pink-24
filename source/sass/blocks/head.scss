@@ -1,13 +1,25 @@
 .head {
   background-color: $dark-grey;
   color: $white;
-  padding: 24px 67px;
-  line-height: 15px;
+  padding: 34px 28px;
+  line-height: 14px;
   border-right: 2px solid $white;
+  padding-top: 19px;
+  text-transform: uppercase;
 
   &:last-child {
     border-right: 2px solid $dark-grey;
     border-top-right-radius: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 39px;
+    padding-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 57px;
+    padding-top: 25px;
   }
 }
 
@@ -30,6 +42,22 @@
 .head__title {
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.head__price {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .head--featured {
@@ -45,4 +73,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
 }
