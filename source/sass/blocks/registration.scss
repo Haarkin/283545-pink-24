@@ -28,8 +28,8 @@
 .registration__announcement {
   text-align: center;
   margin: 0 auto;
-  margin-top: 54px;
-  margin-bottom: 55px;
+  margin-top: 44px;
+  margin-bottom: 29px;
 
   @media (max-width: $mobile-width-only) {
     font-size: 14px;
@@ -37,20 +37,34 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
-    margin-bottom: 82px;
-    width: 620px;
+    margin-top: 92px;
+    margin-bottom: 57px;
+    width: 562px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: announce;
-    width: 940px;
+    width: 780px;
+    margin-bottom: -18px;
+  }
+}
+
+.registration__hidden-announcement {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
 .registration__label {
   color: $red;
   text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 24px;
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+  }
 }
 
 .registration__lower-wrapper {
@@ -58,12 +72,13 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     order: 6;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     justify-content: space-between;
     width: 620px;
   }
@@ -71,10 +86,41 @@
   @media (min-width: $desktop-width) {
     grid-area: button;
     width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.registration__required {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .registration__submit-button {
   width: 276px;
   white-space: nowrap;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.registration__hidden {
+  @media (max-width: $predesktop-width) {
+    display: none;
+  }
 }

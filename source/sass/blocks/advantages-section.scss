@@ -5,7 +5,6 @@
   background-size: 100% 30px, auto;
   background-position: 0 30px, 0 0;
   margin: 0;
-  margin-bottom: 59px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/backgrounds/triangle.svg"), linear-gradient($white 55px, transparent 55px);
@@ -36,15 +35,23 @@
 
 .advantages-section__title {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 94px;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
   margin-top: 42px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 107px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 100px;
+    margin-top: 72px;
   }
 }
 
@@ -52,7 +59,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-bottom: 325px;
+  padding-bottom: 305px;
   background-image: url("../img/backgrounds/pink-screen-small.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -62,8 +69,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 340px;
-    padding-bottom: 49px;
+    padding-left: 310px;
+    padding-bottom: 30px;
     background-image: url("../img/backgrounds/pink-screen-medium.png");
     background-position: left bottom;
 
@@ -86,7 +93,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 43px;
+  margin-bottom: 0;
   text-align: center;
 
   &:last-child {
@@ -95,7 +102,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    margin-bottom: 46px;
+    margin-bottom: 20px;
     text-align: start;
   }
 

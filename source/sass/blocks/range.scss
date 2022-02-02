@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -22,8 +22,9 @@
     border-bottom: 1px solid rgb($dark-grey, 0.1);
     margin: 0 auto;
     margin-bottom: 36px;
-    left: 10%;
-    width: 75%;
+    left: 0;
+    width: 100%;
+    margin-top: 31px;
   }
 }
 
@@ -43,11 +44,11 @@
 }
 
 .range--cut .range__toggle {
-  margin-left: 25px;
+  margin-left: 160px;
 }
 
 .range--fill .range__toggle {
-  margin-left: 160px;
+  margin-left: 25px;
 }
 
 .range--change .range__toggle {

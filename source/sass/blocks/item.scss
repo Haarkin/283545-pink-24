@@ -21,9 +21,21 @@
 
   &--phone {
     background-image: url("../img/phone.svg");
+
+    @media (max-width: $mobile-width-only) {
+      background-image: none;
+    }
   }
 
   &--mail {
     background-image: url("../img/mail.svg");
+
+    @media (max-width: $mobile-width-only) {
+      background-image: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
   }
 }

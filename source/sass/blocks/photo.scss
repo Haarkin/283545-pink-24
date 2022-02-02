@@ -10,7 +10,9 @@
   flex-wrap: wrap;
   margin: 0;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 11px;
+  padding-top: 18px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     height: 155px;
@@ -111,6 +113,7 @@
 .photo--featured .photo__like-button {
   order: 2;
   margin-bottom: 15px;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
     order: 4;
@@ -123,20 +126,35 @@
 
 .photo__author-name {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .photo__time-ago {
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .photo__author-info {
   margin: 0;
   width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+
+.photo__text {
+  text-align: start;
 }
 
 .photo__like-counter {
   color: $red;
   margin-top: auto;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
