@@ -135,3 +135,12 @@
     display: none;
   }
 }
+
+.main-nav--nojs .main-nav__list {
+  position: relative;
+  display: flex;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}

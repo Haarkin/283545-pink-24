@@ -54,22 +54,3 @@
 .advantage--false {
   background-image: url("../img/no.svg");
 }
-
-.advantage__title {
-  margin-bottom: 10px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
-  }
-}
-
-.advantage__description {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 10px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
