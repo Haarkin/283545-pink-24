@@ -32,7 +32,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 44px;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
 
     @media (max-width: $mobile-width-only) {
       font-size: 14px;
@@ -76,11 +76,15 @@
   width: 255px;
   text-align: center;
   margin: 0 auto;
+  font-size: 14px;
+  margin-top: 24px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     margin-top: 47px;
-    margin-bottom: 88px;
+    margin-bottom: 69px;
     width: 429px;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {

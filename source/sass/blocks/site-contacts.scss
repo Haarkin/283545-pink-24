@@ -29,6 +29,12 @@
     }
   }
 
+  &:focus {
+    .site-contacts__circle {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 5px;
   }
