@@ -24,6 +24,14 @@
     }
   }
 
+  &:focus {
+    outline: 1px solid $black;
+
+    .about-text__htmlacademy-logo {
+      fill: $dark-grey;
+    }
+  }
+
   &:active {
     .about-text__htmlacademy-logo {
       fill: $dark-grey;

@@ -16,6 +16,15 @@
   }
 }
 
+.site-contacts__link {
+  display: block;
+  height: 54px;
+
+  &:focus {
+    outline: 1px solid $black;
+  }
+}
+
 .site-contacts__contact {
   margin-right: 8px;
 

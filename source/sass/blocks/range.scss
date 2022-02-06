@@ -41,6 +41,10 @@
   &:active {
     background-color: $red;
   }
+
+  &:focus {
+    outline: 1px solid $red;
+  }
 }
 
 .range--cut .range__toggle {

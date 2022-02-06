@@ -30,7 +30,6 @@
   line-height: 18px;
   background-color: transparent;
   text-transform: none;
-  white-space: nowrap;
   margin-bottom: 32px;
   margin-top: 30px;
 
@@ -46,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 16px 45px;
-    width: 300px;
+    width: 301px;
     margin-right: 20px;
   }
 
@@ -103,5 +102,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  a {
+    display: block;
+    height: 58px;
   }
 }

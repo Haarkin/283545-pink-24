@@ -194,6 +194,20 @@
 .editor__crop-icon {
   background: none;
   border: none;
+  width: 48px;
+  padding: 0;
+
+  &:focus {
+    outline: 1px solid $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+  }
 
   svg {
     @media (min-width: $tablet-width) {
@@ -211,6 +225,20 @@
 .editor__fill-icon {
   background: none;
   border: none;
+  width: 48px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+  }
+
+  &:focus {
+    outline: 1px solid $red;
+  }
 
   svg {
     @media (min-width: $tablet-width) {
@@ -228,6 +256,20 @@
 .editor__change-icon {
   background: none;
   border: none;
+  width: 48px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+  }
+
+  &:focus {
+    outline: 1px solid $red;
+  }
 
   svg {
     @media (min-width: $tablet-width) {
@@ -282,6 +324,10 @@
     color: rgb($white, 0.3);
   }
 
+  &:focus {
+    outline: 1px solid $black;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 16px 80px;
     margin-bottom: 22px;
@@ -319,6 +365,10 @@
     opacity: 0.3;
     background-color: $dark-grey;
     color: $white;
+  }
+
+  &:focus {
+    outline: 1px solid $black;
   }
 
   @media (min-width: $tablet-width) {

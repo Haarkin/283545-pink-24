@@ -76,6 +76,12 @@
     }
   }
 
+  &:focus {
+    .page-header__pink-logo {
+      fill: $red;
+    }
+  }
+
   &:active {
     .page-header__pink-logo {
       fill: $white;
